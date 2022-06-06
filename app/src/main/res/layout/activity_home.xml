@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/main_white">
+
+    <SearchView
+        android:id="@+id/sv_searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/view_border"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_buttonContainer"
+        android:layout_below="@+id/sv_searchBar"
+        android:layout_marginTop="4dp"
+        android:padding="10dp"
+        android:layout_marginBottom="4dp" />
+
+    <LinearLayout
+        android:id="@+id/bt_buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_pembelajaranku"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="Daftar Pembelajaran"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/secondary"/>
+
+        <Button
+            android:id="@+id/bt_kelolaPembelajaran"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Kelola Pembelajaran"
+            android:textSize="10sp"
+            android:layout_marginHorizontal="5dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/secondary"/>
+        <Button
+            android:id="@+id/bt_signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:paddingHorizontal="0dp"
+            android:textSize="7sp"
+            android:text="signout"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/secondary"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

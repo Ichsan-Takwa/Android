@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/main_white">
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pembelajaranku"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:padding="4dp"
+        android:background="@color/main"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <SearchView
+        android:layout_below="@+id/textHeader"
+        android:id="@+id/sv_searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/view_border" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pembelajaranku_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_buatPembelajaran"
+        android:layout_below="@+id/sv_searchBar"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="10dp" />
+
+        <Button
+            android:id="@+id/bt_buatPembelajaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pembelajaran Baru"
+            android:textSize="10sp"
+            android:layout_marginHorizontal="5dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/secondary"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

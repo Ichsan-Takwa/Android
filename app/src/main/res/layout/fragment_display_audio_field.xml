@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DisplayAudioField"
+    android:background="@color/main_white"
+    android:paddingVertical="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textColor="@color/secondary"
+            android:paddingHorizontal="5dp"
+            android:text="audio: "/>
+        <com.google.android.exoplayer2.ui.StyledPlayerView
+            android:id="@+id/pc_audio"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/main"
+            app:resize_mode="fit"
+            app:played_color="@color/secondary"
+            app:hide_during_ads="false"
+            app:hide_on_touch="false"/>
+    </LinearLayout>
+
+
+</FrameLayout>

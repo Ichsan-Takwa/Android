@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KelolaSubjekActivity"
+    android:background="@color/main_white">
+
+
+    <LinearLayout
+        android:id="@+id/bt_tools_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/main">
+        <Button
+            android:id="@+id/bt_inputTextJudul"
+            android:layout_width="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingHorizontal="0dp"
+            android:layout_gravity="bottom"
+            android:text="text\njudul"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"/>
+        <Button
+            android:id="@+id/bt_inputText"
+            android:layout_width="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingHorizontal="0dp"
+            android:text="text"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/bt_inputImage"
+            android:layout_width="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingHorizontal="0dp"
+            android:text="image"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"/>
+        <Button
+            android:id="@+id/bt_inputVideo"
+            android:layout_width="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingHorizontal="0dp"
+            android:text="video"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"/>
+        <Button
+            android:id="@+id/bt_inputAudio"
+            android:layout_width="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingHorizontal="0dp"
+            android:text="audio"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_simpan_subjek"
+        android:layout_below="@+id/bt_tools_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_subjectDetailContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#52C59B02"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="40dp">
+
+                <EditText
+                    android:id="@+id/et_namaSubjek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Nama Subjek" />
+
+                <EditText
+                    android:id="@+id/et_ringkasanSubjek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ringkasan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_subjectItemContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+        <Button
+            android:id="@+id/bt_simpan_subjek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="5dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/secondary"/>
+
+
+
+</RelativeLayout>

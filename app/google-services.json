@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "376937322277",
+    "project_id": "e-learning-interaktif",
+    "storage_bucket": "e-learning-interaktif.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376937322277:android:d06727bbdfa75588d7eccc",
+        "android_client_info": {
+          "package_name": "com.example.authfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376937322277-i25qelem2fgdnbhihpkn777eejo065la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHkPId7yQGarw2Ouyyd6iIfdlfK948HgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376937322277-i25qelem2fgdnbhihpkn777eejo065la.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376937322277:android:476c967e65bca673d7eccc",
+        "android_client_info": {
+          "package_name": "com.example.k6elearninginteraktif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376937322277-i25qelem2fgdnbhihpkn777eejo065la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHkPId7yQGarw2Ouyyd6iIfdlfK948HgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376937322277-i25qelem2fgdnbhihpkn777eejo065la.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

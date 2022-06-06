@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_itemSubjek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_namaSubjek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="Nama Subjek"/>
+
+        <TextView
+            android:id="@+id/tv_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_namaSubjek"
+            android:textSize="12sp"
+            android:text="Deskripsi Subjek"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

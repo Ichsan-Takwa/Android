@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayTextTitleField">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+        android:id="@+id/tv_contentHolder"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        />
+
+</FrameLayout>
